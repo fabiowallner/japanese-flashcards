@@ -1,18 +1,21 @@
 import styled from 'styled-components'
-import Flashcard from '../components/flashcard'
+import Menu from '../components/Menu';
+import Page from '../components/Page';
 
 const Title = styled.h1`
     font-size: 2rem;
     color: rgba(0,0,0,0.8);
     text-align: center;
+    margin-bottom: 50px;
+    padding-top: 25px;
 `
 
 function Index() {
     return (
-        <div>
+        <Page title="Home">
             <Title>Japanese Flashcard Trainer</Title>
-            <Flashcard/>
-        </div>
+            <Menu />
+        </Page>
     )
 }
   
