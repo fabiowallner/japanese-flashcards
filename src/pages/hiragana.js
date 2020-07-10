@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Page from '../components/Page';
-import FlashCard from '../components/flashcard';
+import FlashCard from '../components/FlashCard';
 
 const Title = styled.h1`
     font-size: 2rem;
