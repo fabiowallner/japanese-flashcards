@@ -13,7 +13,7 @@ function Menu() {
     return (
         <MenuWrapper>
             <MenuItem media="ひらがな" title="Hiragana" description="Learn all Hiragana characters" link="/hiragana" />
-            <MenuItem media="カタカナ" title="Katakana" description="Learn all 46 Katakana characters" link="/hiragana" />
+            <MenuItem media="カタカナ" title="Katakana" description="Coming Soon" link="" />
             <MenuItem media="WORDS" title="Words" description="Train 25 out of 1000 most popular words" link="/words" />
         </MenuWrapper>
     )

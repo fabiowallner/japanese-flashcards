@@ -74,7 +74,7 @@ function HiraganaPage() {
     // const randomCardID = Math.floor(Math.random() * deck.length);
     // console.log(randomCardID)
     console.log('on mount');
-    const newDeck = shuffleArray(Hiragana).slice(0, 5);
+    const newDeck = shuffleArray(Hiragana);
     console.log(newDeck);
     setDeck(newDeck);
   }, []);
