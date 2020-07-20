@@ -22,6 +22,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fontFamily};
   }
+
+  #__next {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 function MyApp({ Component, pageProps }) {

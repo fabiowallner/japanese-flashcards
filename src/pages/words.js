@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Page from '../components/Page';
 import FlashCard from '../components/FlashCard';
-import Hiragana from "../content/hiragana.json";
+import Words from "../content/words.json";
 import { useEffect, useState } from 'react';
 import { shuffleArray } from '../lib/arrayFunctions';
 
@@ -66,7 +66,7 @@ const FlashCardWrapper = styled.div`
     } 
 `
 
-function HiraganaPage() {
+function WordsPage() {
   const [deck, setDeck] = useState([]);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ function HiraganaPage() {
     // const randomCardID = Math.floor(Math.random() * deck.length);
     // console.log(randomCardID)
     console.log('on mount');
-    const newDeck = shuffleArray(Hiragana).slice(0, 5);
+    const newDeck = shuffleArray(Words).slice(0, 25);
     console.log(newDeck);
     setDeck(newDeck);
   }, []);
@@ -93,17 +93,18 @@ function HiraganaPage() {
 
 
   return (
-    <Page title="Hiragana Trainer">
-      <Title>Hiragana</Title>
+    <Page title="Words Trainer">
+      <Title>Random Words</Title>
       <FlashCardContainer>
         {
           deck.map((card, index) => {
             return (
-            <FlashCardWrapper key={`index-${card.question.title}`} >
+            <FlashCardWrapper key={`${card.question}`} >
               <FlashCard 
-                frontTitle={card.question.title}
-                backTitle={card.answer.title}
-                backSubtitle={card.answer.subtitle}
+                frontTitle={card.question}
+                frontSubtitle={card.hiragana}
+                backTitle={""}
+                backSubtitle={card.answer.title}
                 onYesClick={() => {
                   yesClick(index);
                 }}
@@ -121,4 +122,4 @@ function HiraganaPage() {
   )
 }
 
-export default HiraganaPage
+export default WordsPage

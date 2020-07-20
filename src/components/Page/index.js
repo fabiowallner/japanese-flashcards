@@ -4,6 +4,11 @@ import Head from 'next/head';
 
 const PageWrapper = styled.div`
     padding: 0px 25px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 `
 
 function Page({title, children}) {

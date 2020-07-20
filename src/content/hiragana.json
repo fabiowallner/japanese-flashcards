@@ -1,0 +1,416 @@
+[
+	{
+		"question": {
+            "title": "あ"
+        },
+		"answer": {
+			"title": "a",
+			"subtitle": "あ"
+		}
+	},
+	{
+		"question": {
+            "title": "い"
+        },
+		"answer": {
+			"title": "i",
+			"subtitle": "い"
+		}
+	},
+	{
+		"question": {
+            "title": "う"
+        },
+		"answer": {
+			"title": "u",
+			"subtitle": "う"
+		}
+	},
+	{
+		"question": {
+            "title": "え"
+        },
+		"answer": {
+			"title": "e",
+			"subtitle": "え"
+		}
+	},
+	{
+		"question": {
+            "title": "お"
+        },
+		"answer": {
+			"title": "o",
+			"subtitle": "お"
+		}
+	},
+	{
+		"question": {
+            "title": "か"
+        },
+		"answer": {
+			"title": "ka",
+			"subtitle": "か"
+		}
+	},
+	{
+		"question": {
+            "title": "き"
+        },
+		"answer": {
+			"title": "ki",
+			"subtitle": "き"
+		}
+	},
+	{
+		"question": {
+            "title": "く"
+        },
+		"answer": {
+			"title": "ku",
+			"subtitle": "く"
+		}
+	},
+	{
+		"question": {
+            "title": "け"
+        },
+		"answer": {
+			"title": "ke",
+			"subtitle": "け"
+		}
+	},
+	{
+		"question": {
+            "title": "こ"
+        },
+		"answer": {
+			"title": "ko",
+			"subtitle": "こ"
+		}
+	},
+	{
+		"question": {
+            "title": "さ"
+        },
+		"answer": {
+			"title": "sa",
+			"subtitle": "さ"
+		}
+	},
+	{
+		"question": {
+            "title": "し"
+        },
+		"answer": {
+			"title": "shi",
+			"subtitle": "し"
+		}
+	},
+	{
+		"question": {
+            "title": "す"
+        },
+		"answer": {
+			"title": "su",
+			"subtitle": "す"
+		}
+	},
+	{
+		"question": {
+            "title": "せ"
+        },
+		"answer": {
+			"title": "se",
+			"subtitle": "せ"
+		}
+	},
+	{
+		"question": {
+            "title": "そ"
+        },
+		"answer": {
+			"title": "so",
+			"subtitle": "そ"
+		}
+	},
+	{
+		"question": {
+            "title": "た"
+        },
+		"answer": {
+			"title": "ta",
+			"subtitle": "た"
+		}
+	},
+	{
+		"question": {
+            "title": "ち"
+        },
+		"answer": {
+			"title": "chi",
+			"subtitle": "ち"
+		}
+	},
+	{
+		"question": {
+            "title": "つ"
+        },
+		"answer": {
+			"title": "tsu",
+			"subtitle": "つ"
+		}
+	},
+	{
+		"question": {
+            "title": "て"
+        },
+		"answer": {
+			"title": "te",
+			"subtitle": "て"
+		}
+	},
+	{
+		"question": {
+            "title": "と"
+        },
+		"answer": {
+			"title": "to",
+			"subtitle": "と"
+		}
+	},
+	{
+		"question": {
+            "title": "な"
+        },
+		"answer": {
+			"title": "na",
+			"subtitle": "な"
+		}
+	},
+	{
+		"question": {
+            "title": "に"
+        },
+		"answer": {
+			"title": "ni",
+			"subtitle": "に"
+		}
+	},
+	{
+		"question": {
+            "title": "ぬ"
+        },
+		"answer": {
+			"title": "nu",
+			"subtitle": "ぬ"
+		}
+	},
+	{
+		"question": {
+            "title": "ね"
+        },
+		"answer": {
+			"title": "ne",
+			"subtitle": "ね"
+		}
+	},
+	{
+		"question": {
+            "title": "の"
+        },
+		"answer": {
+			"title": "no",
+			"subtitle": "の"
+		}
+	},
+	{
+		"question": {
+            "title": "は"
+        },
+		"answer": {
+			"title": "ha",
+			"subtitle": "は"
+		}
+	},
+	{
+		"question": {
+            "title": "ひ"
+        },
+		"answer": {
+			"title": "hi",
+			"subtitle": "ひ"
+		}
+	},
+	{
+		"question": {
+            "title": "ふ"
+        },
+		"answer": {
+			"title": "fu",
+			"subtitle": "ふ"
+		}
+	},
+	{
+		"question": {
+            "title": "へ"
+        },
+		"answer": {
+			"title": "he",
+			"subtitle": "へ"
+		}
+	},
+	{
+		"question": {
+            "title": "ほ"
+        },
+		"answer": {
+			"title": "ho",
+			"subtitle": "ほ"
+		}
+	},
+	{
+		"question": {
+            "title": "ま"
+        },
+		"answer": {
+			"title": "ma",
+			"subtitle": "ま"
+		}
+	},
+	{
+		"question": {
+            "title": "み"
+        },
+		"answer": {
+			"title": "mi",
+			"subtitle": "み"
+		}
+	},
+	{
+		"question": {
+            "title": "む"
+        },
+		"answer": {
+			"title": "mu",
+			"subtitle": "む"
+		}
+	},
+	{
+		"question": {
+            "title": "め"
+        },
+		"answer": {
+			"title": "me",
+			"subtitle": "め"
+		}
+	},
+	{
+		"question": {
+            "title": "も"
+        },
+		"answer": {
+			"title": "mo",
+			"subtitle": "も"
+		}
+	},
+	{
+		"question": {
+            "title": "ら"
+        },
+		"answer": {
+			"title": "ra",
+			"subtitle": "ら"
+		}
+	},
+	{
+		"question": {
+            "title": "り"
+        },
+		"answer": {
+			"title": "ri",
+			"subtitle": "り"
+		}
+	},
+	{
+		"question": {
+            "title": "る"
+        },
+		"answer": {
+			"title": "ru",
+			"subtitle": "る"
+		}
+	},
+	{
+		"question": {
+            "title": "れ"
+        },
+		"answer": {
+			"title": "re",
+			"subtitle": "れ"
+		}
+	},
+	{
+		"question": {
+            "title": "ろ"
+        },
+		"answer": {
+			"title": "ro",
+			"subtitle": "ろ"
+		}
+	},
+	{
+		"question": {
+            "title": "や"
+        },
+		"answer": {
+			"title": "ya",
+			"subtitle": "や"
+		}
+	},
+	{
+		"question": {
+            "title": "ゆ"
+        },
+		"answer": {
+			"title": "yu",
+			"subtitle": "ゆ"
+		}
+	},
+	{
+		"question": {
+            "title": "よ"
+        },
+		"answer": {
+			"title": "yo",
+			"subtitle": "よ"
+		}
+	},
+	{
+		"question": {
+            "title": "わ"
+        },
+		"answer": {
+			"title": "wa",
+			"subtitle": "わ"
+		}
+	},
+	{
+		"question": {
+            "title": "を"
+        },
+		"answer": {
+			"title": "wo",
+			"subtitle": "を"
+		}
+	},
+	{
+		"question": {
+            "title": "ん"
+        },
+		"answer": {
+			"title": "n",
+			"subtitle": "ん"
+		}
+	}
+]

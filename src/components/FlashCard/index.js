@@ -6,13 +6,21 @@ const CardWrapper = styled.div`
     width: 100%;
     height: 350px;
     border-radius: 12px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    //box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	position: relative;
-	transition: transform 0.6s ease-in-out;
+	transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
     
     ${props => props.flipped && css`
         transform: rotateY(-180deg);
+    `}
+
+    ${props => props.outState == "yes" && css`
+        transform: rotateY(-180deg) translateX(500px) rotateZ(180deg);
+    `}
+
+    ${props => props.outState == "no" && css`
+        transform: rotateY(-180deg) translateX(-500px) rotateZ(-180deg);
     `}
 `
 
@@ -25,6 +33,9 @@ const CardSide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
     ${props => props.back && css`
         transform: rotateY(180deg);
   `}
@@ -76,10 +87,12 @@ const ButtonWrapper = styled.div`
 function FlashCard(props) {
 
     const [flipped, setFlipped] = useState(false);
+    const [outState, setOutState] = useState("none");
 
-    return <CardWrapper flipped={flipped}>
+    return <CardWrapper flipped={flipped} outState={outState}>
         <CardSide front>
             <Title>{props.frontTitle}</Title>
+            <Subtitle>{props.frontSubtitle}</Subtitle>
             <NextButton onClick={() => {
                 setFlipped(true);
             }}>
@@ -91,17 +104,33 @@ function FlashCard(props) {
         <CardSide back>
             <Title>{props.backTitle}</Title>
             <Subtitle>{props.backSubtitle}</Subtitle>
-            <Button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </Button>
-            <Button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </Button>
+            <ButtonWrapper>
+                <Button onClick={() => {
+                    console.log('Yes clicked');
+                    setOutState("yes");
+                    setTimeout(() => {
+                        props.onYesClick();
+                    }, 520)
+                }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </Button>
+                <Button onClick={() => {
+                    console.log('No clicked');
+                    setOutState("no");
+                    setTimeout(() => {
+                        props.onNoClick();
+                        setOutState("none");
+                        setFlipped(false);
+                    }, 520)
+                }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </Button>
+            </ButtonWrapper>
         </CardSide>
     </CardWrapper>
 }
